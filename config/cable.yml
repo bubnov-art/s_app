@@ -1,0 +1,10 @@
+
+redis: &redis
+  adapter: redis
+  url: redis://localhost:6379/1
+
+production: 
+  adapter: redis
+  url: redis://redistogo:e8fbcd7eccc13cc14b9f59941061c132@grouper.redistogo.com:11862/
+development: *redis
+test: *redis

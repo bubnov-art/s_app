@@ -1,0 +1,22 @@
+h1 = "#{@user.name}'s public profile"
+
+#general_statistics
+  .col-md-6
+    table.table.table-hover
+      tr
+        td.table-legend Фио 
+        td.value = @user.name
+      tr
+        td.table-legend email 
+        td.value = @user.email
+      tr
+        td.table-legend Город 
+        td.value = @user.city
+      tr
+        td.table-legend Телефон
+        td.value = @user.phone
+      tr
+        td.table-legend Текущий статус аккаунта
+        td.value = @user.state.name
+  .col-md-6
+    h4 Ваша заявка подтверждена модератором, добро пожаловать

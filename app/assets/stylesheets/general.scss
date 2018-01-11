@@ -1,0 +1,194 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 50px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Gentium Basic', serif;
+  font-weight: bolder;
+}
+
+td.table-legend {
+  text-align: left;
+  font-weight: bolder;
+}
+
+td.value, th.value {
+  text-align: right;
+}
+
+.win {
+  background-color: #72FF61;
+}
+
+.lose {
+  background-color: #FF7070;
+}
+
+.draw {
+  background-color: #dcdcdc;
+}
+
+#matches {
+  td {
+    border: 1px solid black;
+  }
+
+  th, tr, thead {
+    border: none;
+    text-align: center;
+  }
+}
+
+.game-number {
+  width: 10px;
+}
+
+.skill-rating a {
+  color: black;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+footer {
+  margin-top: 100px;
+}
+
+.green_90 {
+  background-color: #72ff61;
+}
+
+.green_80 {
+  background-color: #87ff78;
+}
+
+.green_70 {
+  background-color: #9bff8f;
+}
+
+.green_60 {
+  background-color: #afffa5;
+}
+
+.green_50 {
+  background-color: #afffa5;
+}
+
+.green_40 {
+  background-color: #c3ffbc;
+}
+
+.green_30 {
+  background-color: #c3ffbc;
+}
+
+.green_20 {
+  background-color: #d7ffd2;
+}
+
+.green_10 {
+  background-color: #ebffe9;
+}
+
+.red_90 {
+  background-color: #ff7070;
+}
+
+.red_80 {
+  background-color: #ff7f7f;
+}
+
+.red_70 {
+  background-color: #ff8f8f;
+}
+
+.red_60 {
+  background-color: #ff9f9f;
+}
+
+.red_50 {
+  background-color: #ffafaf;
+}
+
+.red_40 {
+  background-color: #ffbfbf;
+}
+
+.red_30 {
+  background-color: #ffcfcf;
+}
+
+.red_20 {
+  background-color: #ffdfdf;
+}
+
+.red_10 {
+  background-color: #ffefef;
+}
+
+.red_0 {
+  background-color: #ffafaf;
+}
+
+.table th, .table td {
+  padding: 4px!important;
+}
+
+.actions {
+  width: 60px;
+}
+
+a.glyphicon:hover {
+  opacity: 0.7
+}
+
+.hero-percent-played a {
+  border-bottom: 1px dotted black;
+  cursor: help;
+  color: black;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.submit-qualification {
+  margin-top: 30px;
+}
+
+.alert {
+  z-index: 999;
+  position: fixed;
+  max-width: 600px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+// Headway widget
+#HW_badge_cont {
+  position: absolute!important;
+  margin-top: -20px;
+}
+
+#HW_badge {
+  margin-top: 10px;
+}
+
+#HW_frame_cont {
+  z-index: 9999;
+}
+.log-n {
+  margin-top: 40%;
+}
+.log-n .panel-body{
+  text-align: center;
+}
+.log-n .panel-body .btn{
+  text-align: center;
+  margin-top: 10px;
+  min-width: 150px;
+}

@@ -1,0 +1,43 @@
+div.col-md-2
+div.col-md-8
+	h2 = @user.name
+	div.panel.panel-default
+		div.panel-heading 
+			| Информация о пользователе
+			a.btn.btn-primary.btn-back type="button" href="/admin/users" К списку пользователей
+			div.clearfix
+		div.panel-body
+			table.table.table-hover
+				tbody
+		   		tr
+		      	td.table-legend ФИО
+		      	td.value = @user.name
+			   	tr
+			      td.table-legend email 
+			      td.value = @user.email
+			   	tr
+			      td.table-legend Город
+			      td.value = @user.city
+			   	tr
+			      td.table-legend Телефон
+			      td.value = @user.phone
+			   	tr
+			      td.table-legend Текущий статус
+			      td.value = human_enum_name(@user, :state)
+		div#user_footer.panel-footer
+			a.btn.btn-info type="button" href="#{@user.pass_file.url}" target="blank" 
+				= I18n.t('activerecord.buttons.show_scan')
+			- if @user_state != 4
+				button.btn.btn-danger.btn-r name="state-4-#{@user.id}" type="button" 
+					= I18n.t('activerecord.buttons.ban_user')
+			- if @user_state == 2 || @user_state == 1 || @user_state == 0
+				button.btn.btn-warning.btn-r name="state-3-#{@user.id}" type="button" 
+					= I18n.t('activerecord.buttons.reject_request')
+			- if @user_state == 3 || @user_state == 2 
+				button.btn.btn-success.btn-r name="state-0-#{@user.id}" type="button" 
+					= I18n.t('activerecord.buttons.confirm_registration')
+			- if @user_state == 4
+				button.btn.btn-success.btn-r name="state-0-#{@user.id}" type="button" 
+					= I18n.t('activerecord.buttons.unban')
+			div.clearfix
+div.col-md-2

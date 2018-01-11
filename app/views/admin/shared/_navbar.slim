@@ -1,0 +1,8 @@
+nav.navbar.navbar-inverse.navbar-fixed-top
+  div.container-fluid
+    div.navbar-header
+      a.navbar-brand href="/admin/users" Пользователи
+    div.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        li 
+          = link_to "Выход", destroy_user_session_path, method: :delete

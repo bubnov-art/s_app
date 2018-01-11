@@ -1,0 +1,21 @@
+- users.each do |user|
+	tr[class="#{user_status_index(User.states[user.state])}"]
+		td.text-center = user.id
+		td = user.name
+		td = user.email
+		td = user.phone
+		td = user.city
+		td = human_enum_name(user, :state)
+		td 
+			div.btn-group
+				a.btn.btn-primary type="button" href="/admin/users/#{user.id}" 
+					= I18n.t('activerecord.buttons.show_user')
+				
+			
+  				
+
+
+
+
+
+

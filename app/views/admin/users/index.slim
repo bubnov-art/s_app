@@ -1,0 +1,22 @@
+div.col-md-1
+div.col-md-10
+	div.panel-heading
+  	h1 Список пользователей
+	div.panel-body
+		rd-widget
+			rd-widget-body.medium.no-padding
+				div.table-responsive
+					table.table
+						thead
+							tr 
+								th.text-center ID
+								th ФИО
+								th email
+								th Телефон
+								th Город
+								th Статус
+								th Действия
+						tbody#user-table
+							= render partial: 'admin/users/table', locals: { users: @users }
+						
+div.col-md-1	
